@@ -1,0 +1,273 @@
+/*1. ESTILOS GERAIS E RESETS*/
+/*2. IMAGE LOGO*/
+/*3. FORM*/
+/*4. REGISTRATION*/
+/*5. APPS*/
+/*6. FOOTER*/
+/*7. MEDIA QUERY*/
+/**/
+
+/*1. ESTILOS GERAIS E RESETS*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--clr-background);
+}
+
+:root {
+    --clr-background: #fafafa;
+    --clr-btn: RGB(178, 223, 252);
+    --clr-fcb-font: #38518d;
+    --crl-white: white;
+}
+
+p {
+    background-color: var(--crl-white);
+    cursor: pointer;
+}
+
+/*2. IMAGE LOGO*/
+
+.container {
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+#iphone {
+    height: 550px;
+    margin-right: 10px;
+}
+
+/*3. FORM*/
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    background-color: var(--crl-white);
+    align-items: center;
+    width: 340px;
+    border: 1px solid gainsboro;
+    height: 350px;
+    padding: 30px;
+}
+
+#instagram-logo {
+    width: 200px;
+    margin-bottom: 25px;
+}
+
+input {
+    width: 280px;
+    padding: 5px;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid gainsboro;
+}
+
+input::placeholder {
+    font-size: .7rem;
+}
+
+.input-email {
+    margin-bottom: 5px;
+}
+
+.input-password {
+    margin-bottom: 10px;
+}
+
+.btn-entrar {
+    background-color: var(--clr-btn);
+    color: white;
+    width: 280px;
+    padding: 5px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 15px;
+    transition: .5s;
+}
+
+.btn-entrar:hover {
+    background-color: dodgerblue;
+}
+
+.ou {
+    color: gainsboro;
+    display: flex;
+    background-color: var(--crl-white);
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.hr {
+    height: 1px;
+    width: 120px;
+    background-color: gainsboro;
+    margin: 8px;
+}
+
+.fcb {
+    display: flex;
+    color: var(--clr-fcb-font);
+    background-color: var(--crl-white);
+}
+
+.fcb i {
+    margin-right: 6px;
+}
+
+.fcb p {
+    font-weight: bold;
+}
+
+.forget-password {
+    font-size: .7rem;
+    margin-top: 15px;
+    color: var(--clr-btn);
+}
+
+
+/*4. REGISTRATION*/
+
+.form-signin {
+    border: 1px solid gainsboro;
+    display: flex;
+    background-color: var(--crl-white);
+    margin-top: 5px;
+    padding: 10px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    font-size: .8rem;
+    color: rgb(124, 124, 124);
+}
+
+.forget-password p:hover {
+    color: dodgerblue;
+}
+
+
+strong {
+    color: var(--clr-btn);
+    background-color: var(--crl-white);
+    transition: .5s;
+}
+
+strong:hover {
+    color: dodgerblue;
+}
+
+/*5. APPS*/
+
+.app {
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.app p {
+    background-color: var(--clr-background);
+}
+
+
+.btn-apps {
+    display: flex;
+    justify-content: center;
+}
+
+/*6. FOOTER*/
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 700px;
+    margin: 30px auto;
+}
+
+
+.p-footer {
+    margin: 7px 5px;
+    font-size: .7rem;
+    color: rgb(124, 124, 124);
+    background-color: var(--clr-background);
+    
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--clr-background);
+}
+
+.portfolio p {
+    color: rgb(124, 124, 124);
+    background-color: var(--clr-background);
+}
+
+a {
+    color: var(--clr-btn);
+    font-weight: bold;
+    text-decoration: none;
+    transition: .5s;
+}
+
+a:hover {
+    color: dodgerblue;
+}
+
+/*7. MEDIA QUERY*/
+
+@media (max-width: 480px) {
+    #iphone {
+        display: none;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        width: 800px;
+    }
+
+    .container {
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        margin: 0 auto;
+    }
+
+    .form, .form-signin {
+        width: 100%;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+    }
+
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .portfolio {
+        margin: 0 auto;
+    }  
+}
+
+
+
+
+
+
